@@ -9,3 +9,10 @@
 .block-quicklypost label {
     display: inline;
 }
+div.post{
+	font-size:18px;
+	font-family:Arial;
+}
+.block-quicklypost div{
+text-align:center;
+}
