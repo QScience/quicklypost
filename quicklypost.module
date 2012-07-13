@@ -99,6 +99,9 @@ function postform_overlay($form,$form_state){
 
 function quicklypost_overlay_child_initialize() {
   // Add our custom JavaScript.
-  drupal_add_js(drupal_get_path('module', 'quicklypost') . '/overlay-child.js');
+  if( arg(0) == 'node' and arg(1) == 'add' ){
+  	drupal_add_js(drupal_get_path('module', 'quicklypost') . '/overlay-child.js');
+  }
+  
 }
 
